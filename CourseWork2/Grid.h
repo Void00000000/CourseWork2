@@ -5,11 +5,11 @@
 class Grid : public Area
 {
 private:
-    std::vector <double> X, Y;  // Координаты узлов сетки
-    std::vector <int> IXw, IYw;  // Хранят позиции координат границ в векторах X и Y
-    std::vector <int> nx, ny; // Разбиения по X и Y
-    std::vector <double> qx, qy;  // Коэффициенты сгущения
-    int Nx, Ny;  // Количество узлов по X и по Y
+    std::vector <double> X, Y;  // ГЉГ®Г®Г°Г¤ГЁГ­Г ГІГ» ГіГ§Г«Г®Гў Г±ГҐГІГЄГЁ
+    std::vector <int> IXw, IYw;  // Г•Г°Г Г­ГїГІ ГЇГ®Г§ГЁГ¶ГЁГЁ ГЄГ®Г®Г°Г¤ГЁГ­Г ГІ ГЈГ°Г Г­ГЁГ¶ Гў ГўГҐГЄГІГ®Г°Г Гµ X ГЁ Y
+    std::vector <int> nx, ny; // ГђГ Г§ГЎГЁГҐГ­ГЁГї ГЇГ® X ГЁ Y
+    std::vector <double> qx, qy;  // ГЉГ®ГЅГґГґГЁГ¶ГЁГҐГ­ГІГ» Г±ГЈГіГ№ГҐГ­ГЁГї
+    int Nx, Ny;  // ГЉГ®Г«ГЁГ·ГҐГ±ГІГўГ® ГіГ§Г«Г®Гў ГЇГ® X ГЁ ГЇГ® Y
 
     double t0, tn;
     int nt;
@@ -102,7 +102,7 @@ public:
     }
 
 
-    // Определяет номер подобласти, в которой расположен конечный элемент
+    // ГЋГЇГ°ГҐГ¤ГҐГ«ГїГҐГІ Г­Г®Г¬ГҐГ° ГЇГ®Г¤Г®ГЎГ«Г Г±ГІГЁ, Гў ГЄГ®ГІГ®Г°Г®Г© Г°Г Г±ГЇГ®Г«Г®Г¦ГҐГ­ ГЄГ®Г­ГҐГ·Г­Г»Г© ГЅГ«ГҐГ¬ГҐГ­ГІ
     int inSubArea(int px, int py) {
         int ixw1, ixw2, iyw1, iyw2;
         for (int i = 0; i < nw; i++) {
@@ -116,8 +116,9 @@ public:
             if (flag1 && flag2)
                 return Mw[i].ni;
         }
-        return -1;  // Фиктивный узел
+        return -1;  // Г”ГЁГЄГІГЁГўГ­Г»Г© ГіГ§ГҐГ«
     }
+
 
     double getX(int i) { return X[i]; }
     double getY(int i) { return Y[i]; }
