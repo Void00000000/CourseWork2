@@ -1,4 +1,4 @@
-#include <vector>
+п»ї#include <vector>
 #include <fstream>
 #include <string>
 #include "replace_dots.h"
@@ -16,7 +16,7 @@ void replace_dots(const std::string &fname) {
 	std::ifstream fi_read;
 	std::ofstream fi_write;
 	fi_read.open(fname);
-	fi_read.seekg(0);  // На всякий случай
+	fi_read.seekg(0);  // РќР° РІСЃСЏРєРёР№ СЃР»СѓС‡Р°Р№
 
 	std::string line;
 	std::vector<std::string> lines;

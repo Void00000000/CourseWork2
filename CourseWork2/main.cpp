@@ -1,9 +1,9 @@
-#include "FEM.h"
+п»ї#include "FEM.h"
 #include "replace_dots.h"
 
 int main() {
 	std::string fname_res = "Result.txt";
-	std::string fname_grid = "Grid.txt";  // Файл в котором выводится координаты сетки
+	std::string fname_grid = "Grid.txt";  // Р¤Р°Р№Р» РІ РєРѕС‚РѕСЂРѕРј РІС‹РІРѕРґРёС‚СЃСЏ РєРѕРѕСЂРґРёРЅР°С‚С‹ СЃРµС‚РєРё
 	std::string test_folder = "research_uniform_1";
 
 	std::ofstream ofile_grid;

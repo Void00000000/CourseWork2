@@ -1,28 +1,28 @@
-#pragma once
+п»ї#pragma once
 #include <vector>
 #include <fstream>
 #include <string>
 
-// Подобласть
+// РџРѕРґРѕР±Р»Р°СЃС‚СЊ
 struct sub_area {
-    // Индексы в массивах Xw и Yw
+    // РРЅРґРµРєСЃС‹ РІ РјР°СЃСЃРёРІР°С… Xw Рё Yw
     int nx1;  
     int ny1;
     int nx2;
     int ny2;
-    int ni;  // Номер подобласти
+    int ni;  // РќРѕРјРµСЂ РїРѕРґРѕР±Р»Р°СЃС‚Рё
 };
 
 
-// Класс описывает расчётную область
+// РљР»Р°СЃСЃ РѕРїРёСЃС‹РІР°РµС‚ СЂР°СЃС‡С‘С‚РЅСѓСЋ РѕР±Р»Р°СЃС‚СЊ
 class Area
 {
 protected:
-    int nw;  // Количество подобластей
-    int nXw; // Длина вектора Xw
-    int nYw; // Длина вектора Yw;
-    std::vector <double> Xw, Yw;  //координаты подобластей
-    std::vector <sub_area> Mw;  // Вектор, содержащий подобласти
+    int nw;  // РљРѕР»РёС‡РµСЃС‚РІРѕ РїРѕРґРѕР±Р»Р°СЃС‚РµР№
+    int nXw; // Р”Р»РёРЅР° РІРµРєС‚РѕСЂР° Xw
+    int nYw; // Р”Р»РёРЅР° РІРµРєС‚РѕСЂР° Yw;
+    std::vector <double> Xw, Yw;  //РєРѕРѕСЂРґРёРЅР°С‚С‹ РїРѕРґРѕР±Р»Р°СЃС‚РµР№
+    std::vector <sub_area> Mw;  // Р’РµРєС‚РѕСЂ, СЃРѕРґРµСЂР¶Р°С‰РёР№ РїРѕРґРѕР±Р»Р°СЃС‚Рё
     void read_area(std::string &test_folder) {
         std::string path = "Input_Data/" + test_folder + "/";
         std::ifstream area_file;

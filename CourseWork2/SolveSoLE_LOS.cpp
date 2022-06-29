@@ -1,4 +1,4 @@
-#include <iostream>
+п»ї#include <iostream>
 #include<locale.h>
 #include<fstream>
 #include<vector>
@@ -162,18 +162,18 @@ void LOS_LU()
 		X_k(a, z);//x=x(k-1)+a*z  (3.36)
 		R_k(a, p);//r=r(k-1)+p*a  (3.37)
 		U_1(r, boof);//boof=(U^-1)*r
-		AVec(boof, boof1);//boof1=A*boof Все сделать по образцу этой функции
+		AVec(boof, boof1);//boof1=A*boof Р’СЃРµ СЃРґРµР»Р°С‚СЊ РїРѕ РѕР±СЂР°Р·С†Сѓ СЌС‚РѕР№ С„СѓРЅРєС†РёРё
 		L_1(boof1, boof);//boof=(L^-1)*boof1
 		b = -scalar_mult(p, boof, N) / scalar_mult(p, p, N);//b=-(p,boof)/(p,p)  (3.38)
 		U_1(r, boof1);//boof1=(U^-1)*r
 		Z_k(boof1, b, z, z);//z=boof1+b*z(k-1)
-		Z_k(boof, b, p, p);//p=длинное выражение+b*p  (3.40)
+		Z_k(boof, b, p, p);//p=РґР»РёРЅРЅРѕРµ РІС‹СЂР°Р¶РµРЅРёРµ+b*p  (3.40)
 		nr = Norm(r);
 		cout.setf(ios::scientific);
-		cout << i << "  Условие малости относительной невязки:" << nr / nf << endl;
+		cout << i << "  РЈСЃР»РѕРІРёРµ РјР°Р»РѕСЃС‚Рё РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕР№ РЅРµРІСЏР·РєРё:" << nr / nf << endl;
 	}
 	nev = _nev();//nev=|f-Ax|/|f|
-	cout << "  Относительная невязка:" << nev << endl;
+	cout << "  РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ РЅРµРІСЏР·РєР°:" << nev << endl;
 }
 
 void LOS_DI()
@@ -200,10 +200,10 @@ void LOS_DI()
 		Z_k(boof, b, p, p);//p=boof+b*p  (3.40)
 		nr = Norm(r);
 		cout.setf(ios::scientific);
-		cout << i << "  Условие малости относительной невязки:" << nr / nf << endl;
+		cout << i << "  РЈСЃР»РѕРІРёРµ РјР°Р»РѕСЃС‚Рё РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕР№ РЅРµРІСЏР·РєРё:" << nr / nf << endl;
 	}
 	nev = _nev();//nev=|f-Ax|/|f|
-	cout << "  Относительная невязка:" << nev << endl;
+	cout << "  РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ РЅРµРІСЏР·РєР°:" << nev << endl;
 }
 
 
@@ -229,11 +229,11 @@ void LOS()
 		nr = Norm(r);
 		cout.setf(ios::scientific);
 		if (i % 1000 == 0)
-			cout << i << " Условие малости относительной невязки:" << nr / nf << endl;
+			cout << i << " РЈСЃР»РѕРІРёРµ РјР°Р»РѕСЃС‚Рё РѕС‚РЅРѕСЃРёС‚РµР»СЊРЅРѕР№ РЅРµРІСЏР·РєРё:" << nr / nf << endl;
 
 	}
 	nev = _nev();//nev=|f-Ax|/|f|
-	cout << "  Относительная невязка:" << nev << endl;
+	cout << "  РћС‚РЅРѕСЃРёС‚РµР»СЊРЅР°СЏ РЅРµРІСЏР·РєР°:" << nev << endl;
 }
 
 void LUS_factorisation()
@@ -251,7 +251,7 @@ void LUS_factorisation()
 		{
 			j = jg[k];
 			ki = i0;
-			kj = ig[j];//что такое kj - соответсвующий номер элемента для домножения
+			kj = ig[j];//С‡С‚Рѕ С‚Р°РєРѕРµ kj - СЃРѕРѕС‚РІРµС‚СЃРІСѓСЋС‰РёР№ РЅРѕРјРµСЂ СЌР»РµРјРµРЅС‚Р° РґР»СЏ РґРѕРјРЅРѕР¶РµРЅРёСЏ
 			suml = sumu = 0;
 			while (ki < k)
 				if (jg[kj] == jg[ki]) {

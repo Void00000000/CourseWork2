@@ -1,8 +1,8 @@
-#pragma once
+п»ї#pragma once
 class Diff_Parameters_test0
 {
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         return 1;
     }
 
@@ -91,7 +91,7 @@ protected:
 class Diff_Parameters_test00
 {
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         return 1;
     }
 
@@ -160,7 +160,7 @@ protected:
 class Diff_Parameters_test1
 {
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         return 0;
     }
 
@@ -237,7 +237,7 @@ protected:
 class Diff_Parameters_test2
 {
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         return 0;
     }
 
@@ -313,7 +313,7 @@ protected:
 class Diff_Parameters_test3
 {
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         return 1;
     }
 
@@ -389,7 +389,7 @@ protected:
 class Diff_Parameters_test4
 {
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         return 1;
     }
 
@@ -465,7 +465,7 @@ protected:
 class Diff_Parameters_test5
 {
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         switch (wi)
         {
         case 1:
@@ -576,7 +576,7 @@ protected:
 
 class Diff_Parameters_research_uniform_x {
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         return 1;
     }
 
@@ -651,7 +651,7 @@ protected:
 
 class Diff_Parameters_research_uniform_t {
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         return 1;
     }
 
@@ -726,7 +726,7 @@ protected:
 
 class Diff_Parameters_research_uniform_xt {
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         return 1;
     }
 
@@ -801,7 +801,7 @@ protected:
 
 class Diff_Parameters_research_uniform_tt{
 protected:
-    double chi(int wi) {// греческая буква Хи
+    double chi(int wi) {// РіСЂРµС‡РµСЃРєР°СЏ Р±СѓРєРІР° РҐРё
         return 0;
     }
 

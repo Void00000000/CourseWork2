@@ -1,15 +1,15 @@
-#pragma once
+п»ї#pragma once
 #include "Area.h"
 #include <iomanip>
 
 class Grid : public Area
 {
 private:
-    std::vector <double> X, Y;  // Координаты узлов сетки
-    std::vector <int> IXw, IYw;  // Хранят позиции координат границ в векторах X и Y
-    std::vector <int> nx, ny; // Разбиения по X и Y
-    std::vector <double> qx, qy;  // Коэффициенты сгущения
-    int Nx, Ny;  // Количество узлов по X и по Y
+    std::vector <double> X, Y;  // РљРѕРѕСЂРґРёРЅР°С‚С‹ СѓР·Р»РѕРІ СЃРµС‚РєРё
+    std::vector <int> IXw, IYw;  // РҐСЂР°РЅСЏС‚ РїРѕР·РёС†РёРё РєРѕРѕСЂРґРёРЅР°С‚ РіСЂР°РЅРёС† РІ РІРµРєС‚РѕСЂР°С… X Рё Y
+    std::vector <int> nx, ny; // Р Р°Р·Р±РёРµРЅРёСЏ РїРѕ X Рё Y
+    std::vector <double> qx, qy;  // РљРѕСЌС„С„РёС†РёРµРЅС‚С‹ СЃРіСѓС‰РµРЅРёСЏ
+    int Nx, Ny;  // РљРѕР»РёС‡РµСЃС‚РІРѕ СѓР·Р»РѕРІ РїРѕ X Рё РїРѕ Y
 
     double t0, tn;
     int nt;
@@ -102,7 +102,7 @@ public:
     }
 
 
-    // Определяет номер подобласти, в которой расположен конечный элемент
+    // РћРїСЂРµРґРµР»СЏРµС‚ РЅРѕРјРµСЂ РїРѕРґРѕР±Р»Р°СЃС‚Рё, РІ РєРѕС‚РѕСЂРѕР№ СЂР°СЃРїРѕР»РѕР¶РµРЅ РєРѕРЅРµС‡РЅС‹Р№ СЌР»РµРјРµРЅС‚
     int inSubArea(int px, int py) {
         int ixw1, ixw2, iyw1, iyw2;
         for (int i = 0; i < nw; i++) {
@@ -116,7 +116,7 @@ public:
             if (flag1 && flag2)
                 return Mw[i].ni;
         }
-        return -1;  // Фиктивный узел
+        return -1;  // Р¤РёРєС‚РёРІРЅС‹Р№ СѓР·РµР»
     }
 
     double getX(int i) { return X[i]; }
