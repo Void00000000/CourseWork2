@@ -17,6 +17,7 @@ int main() {
 	ofile.open(fname_res);
 	FEM fem(grid, test_folder);
 
+	// Цикл по временным слоям
 	int Nt = grid.getNt();
 	double t_2, t_1, t;
 	for (int j = 2; j < Nt; j++) {
