@@ -1,5 +1,5 @@
 ﻿#include "FEM.h"
-#include "replace_dots.h"
+#include "replace_dots.h"  // Для замены точек на запятые
 
 int main() {
 	std::string fname_res = "Result.txt";
